@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <link rel="shortcut icon" type="imagen/x-icon" href="static/imagens/favicon.ico" />
+    {% block title %}
+    
+    {% endblock %}
+    <!--Meta-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS-->
+    <link href="../static/css/normalize.css" rel="stylesheet">
+    <link href="../static/css/css.css" rel="stylesheet">
+</head>
+
+<body class="{% block bodytype %} {% endblock %}">
+   <!--Common Between All pages-->
+    <div id="header">
+        <hr style="color:#7279AD; border: 0px; border-style: solid;border-color: #7279AD;">
+        <img src="./static/imagens/logo.png" alt="logo" id="logo">
+        <div id="nav">
+            <a href="/">Home |</a>
+            <a href="/quemsomos">Quem Somos |</a>
+            <a href="/contato">Contato</a>
+            <a href="/users">Usuários</a>
+        </div>
+    </div>  
+
+    {% block content %}
+
+    
+    {% endblock %}
+
+    <!-- Footer -->
+    <p id="copyright">Todos os direitos reservados</p>
+</div>
+
+</body>
+
+</html>

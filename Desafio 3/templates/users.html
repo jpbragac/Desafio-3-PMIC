@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+
+{% block title %}
+<title>Usuários</title> 
+{% endblock %}
+{% block content %}
+    <main class='flex'>
+        <table>
+            <tr>
+                <th>Email</th>
+                <th>Assunto</th>
+                <th>Descrição</th>
+            </tr>
+            {% for user in userInfo %}
+            <tr>
+                <td>{{ user[0] }}</td>
+                <td>{{ user[1] }}</td>
+                <td>{{ user[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </main> 
+{% endblock %}

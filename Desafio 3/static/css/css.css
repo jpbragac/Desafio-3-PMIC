@@ -1,0 +1,49 @@
+body{
+    background-image: url(/static/imagens/fundo2.png);
+    background-size: 159.9px; /* 11.7% is technically the better option but screws up visuals if zoom level is under 100%*/
+    background-color: white;
+    padding: 0;
+    margin: 0 auto;
+    width: 1200px;
+}
+body::-webkit-scrollbar{
+    display: none;
+  }
+body.home{
+    background-image: url(/static/imagens/fundo.png);
+    background-color: #EFEFEF;
+    width: 1200px;
+}
+a{
+    text-align: center;
+}
+#header{
+    background-color: white; 
+    height: 130px;
+}
+#logo{
+    float:left;
+    position: absolute; 
+    padding-top: 1.5%;
+}
+#nav{
+    float: right;
+    padding-top:50px;
+}
+.banner{
+    width:1190px;
+    position: relative;
+}
+.textbox{
+    background-color: white; 
+    width: 1190px; 
+    align-self: left; 
+    
+}
+.textbox > p{
+    padding: 10px;  
+}
+#copyright{
+    text-align: center;
+    font-weight: bold;
+}
